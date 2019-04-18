@@ -11,6 +11,10 @@
 		40962A8B8A3C199320E57BB7 /* Pods_froot_loops.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760E697323BB996F73C162FE /* Pods_froot_loops.framework */; };
 		491F86C12267ACA100B4B414 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F86C02267ACA100B4B414 /* HomeViewController.swift */; };
 		491F86C322691C2A00B4B414 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F86C222691C2A00B4B414 /* MessagesViewController.swift */; };
+		491F86C52269226600B4B414 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491F86C42269226600B4B414 /* MapKit.framework */; };
+		491F86C72269235B00B4B414 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F86C62269235B00B4B414 /* UploadViewController.swift */; };
+		491F86C92269236C00B4B414 /* MyEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F86C82269236C00B4B414 /* MyEventsViewController.swift */; };
+		491F86CB2269238000B4B414 /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F86CA2269238000B4B414 /* SponsorsViewController.swift */; };
 		7C0DCD8D22664B2400DEE090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0DCD8C22664B2400DEE090 /* AppDelegate.swift */; };
 		7C0DCD8F22664B2400DEE090 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0DCD8E22664B2400DEE090 /* ViewController.swift */; };
 		7C0DCD9222664B2400DEE090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C0DCD9022664B2400DEE090 /* Main.storyboard */; };
@@ -44,6 +48,10 @@
 		2F963DF68718B43FC879BE70 /* Pods-froot-loopsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-froot-loopsTests.release.xcconfig"; path = "Target Support Files/Pods-froot-loopsTests/Pods-froot-loopsTests.release.xcconfig"; sourceTree = "<group>"; };
 		491F86C02267ACA100B4B414 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		491F86C222691C2A00B4B414 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		491F86C42269226600B4B414 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		491F86C62269235B00B4B414 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		491F86C82269236C00B4B414 /* MyEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsViewController.swift; sourceTree = "<group>"; };
+		491F86CA2269238000B4B414 /* SponsorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
 		51711F3BDC97927613B036CF /* Pods_froot_loopsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_froot_loopsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		760E697323BB996F73C162FE /* Pods_froot_loops.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_froot_loops.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C0DCD8922664B2400DEE090 /* froot-loops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "froot-loops.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491F86C52269226600B4B414 /* MapKit.framework in Frameworks */,
 				40962A8B8A3C199320E57BB7 /* Pods_froot_loops.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +114,9 @@
 			children = (
 				491F86C02267ACA100B4B414 /* HomeViewController.swift */,
 				491F86C222691C2A00B4B414 /* MessagesViewController.swift */,
+				491F86C62269235B00B4B414 /* UploadViewController.swift */,
+				491F86C82269236C00B4B414 /* MyEventsViewController.swift */,
+				491F86CA2269238000B4B414 /* SponsorsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -146,6 +158,7 @@
 		ED3240A40159B5281BE80687 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				491F86C42269226600B4B414 /* MapKit.framework */,
 				760E697323BB996F73C162FE /* Pods_froot_loops.framework */,
 				51711F3BDC97927613B036CF /* Pods_froot_loopsTests.framework */,
 				098E8BC01923E2FF5EB86C1F /* Pods_froot_loopsUITests.framework */,
@@ -382,9 +395,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C0DCD8F22664B2400DEE090 /* ViewController.swift in Sources */,
+				491F86C92269236C00B4B414 /* MyEventsViewController.swift in Sources */,
+				491F86C72269235B00B4B414 /* UploadViewController.swift in Sources */,
 				7C0DCD8D22664B2400DEE090 /* AppDelegate.swift in Sources */,
 				491F86C322691C2A00B4B414 /* MessagesViewController.swift in Sources */,
 				491F86C12267ACA100B4B414 /* HomeViewController.swift in Sources */,
+				491F86CB2269238000B4B414 /* SponsorsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
