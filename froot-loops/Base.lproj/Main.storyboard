@@ -10,32 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="Nlg-r1-TiV">
-            <objects>
-                <viewController id="AT5-Hm-heZ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7zu-VZ-KQ3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2Gz-RV-GYZ">
-                                <rect key="frame" x="49" y="134" width="121" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Table"/>
-                                    <segment title="Map"/>
-                                </segments>
-                            </segmentedControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="9ae-as-5nV"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="tSf-VM-GGS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="01q-Wy-k4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2717" y="1756"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="IIX-qy-szz">
             <objects>
@@ -70,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="caz-an-bOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="480" y="1756"/>
+            <point key="canvasLocation" x="979.71014492753636" y="1782.5892857142856"/>
         </scene>
         <!--My Events-->
         <scene sceneID="Azx-Cg-RoF">
@@ -89,7 +63,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVC-Wy-n6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="481" y="941"/>
+            <point key="canvasLocation" x="71" y="917"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3fl-gv-i5Z">
@@ -105,13 +79,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bb3-ZV-8cy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2174" y="1783"/>
+            <point key="canvasLocation" x="3084.057971014493" y="1782.5892857142856"/>
         </scene>
-        <!--Upload-->
+        <!--Sponsor-->
         <scene sceneID="3Mq-LH-WAZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ylX-BW-k03" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Upload" id="94T-QS-UnY"/>
+                    <tabBarItem key="tabBarItem" title="Sponsor" id="94T-QS-UnY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pKv-jg-Wtg">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -138,12 +112,45 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="AT5-Hm-heZ" kind="relationship" relationship="rootViewController" id="CIl-db-LFr"/>
+                        <segue destination="CmE-Te-iOi" kind="relationship" relationship="rootViewController" id="dyk-6j-ZoG"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KV0-eI-yyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2717.3913043478265" y="940.84821428571422"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="knm-1y-3Wg">
+            <objects>
+                <viewController id="CmE-Te-iOi" customClass="HomeViewController" customModule="froot_loops" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eUs-cz-bHb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3UB-hl-oLI">
+                                <rect key="frame" x="59" y="122" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Table"/>
+                                    <segment title="Map"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onSwitchSegment:" destination="CmE-Te-iOi" eventType="valueChanged" id="odP-AH-kQH"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="G9e-Qu-fjx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rhz-FH-xbN"/>
+                    <connections>
+                        <outlet property="homeView" destination="eUs-cz-bHb" id="VKQ-Kg-LBX"/>
+                        <outlet property="tableMapSegmentControl" destination="3UB-hl-oLI" id="6j8-Sf-OxH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9NV-DI-pZd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2726" y="1786"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Anb-L7-2NL">
@@ -159,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EY2-kL-6f5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1417" y="1783"/>
+            <point key="canvasLocation" x="-507.24637681159425" y="1782.5892857142856"/>
         </scene>
         <!--Messages-->
         <scene sceneID="ufZ-VH-5sn">

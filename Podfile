@@ -6,6 +6,8 @@ target 'froot-loops' do
   use_frameworks!
 
   # Pods for froot-loops
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 
   target 'froot-loopsTests' do
     inherit! :search_paths
