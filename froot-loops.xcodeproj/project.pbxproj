@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BD97F3822694FC40060B980 /* MyEventsCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD97F3722694FC40060B980 /* MyEventsCells.swift */; };
 		336BFAA2E23A49242F69FFFC /* Pods_froot_loopsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098E8BC01923E2FF5EB86C1F /* Pods_froot_loopsUITests.framework */; };
 		40962A8B8A3C199320E57BB7 /* Pods_froot_loops.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760E697323BB996F73C162FE /* Pods_froot_loops.framework */; };
 		491F86C12267ACA100B4B414 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F86C02267ACA100B4B414 /* HomeViewController.swift */; };
@@ -44,6 +45,7 @@
 		098E8BC01923E2FF5EB86C1F /* Pods_froot_loopsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_froot_loopsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A08CEE63B60D493901458AC /* Pods-froot-loopsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-froot-loopsTests.debug.xcconfig"; path = "Target Support Files/Pods-froot-loopsTests/Pods-froot-loopsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		116BAA83A1137A2312DFECE1 /* Pods-froot-loops.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-froot-loops.debug.xcconfig"; path = "Target Support Files/Pods-froot-loops/Pods-froot-loops.debug.xcconfig"; sourceTree = "<group>"; };
+		1BD97F3722694FC40060B980 /* MyEventsCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsCells.swift; sourceTree = "<group>"; };
 		1CD9E462442DDF7AB035A5DE /* Pods-froot-loopsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-froot-loopsUITests.release.xcconfig"; path = "Target Support Files/Pods-froot-loopsUITests/Pods-froot-loopsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2F963DF68718B43FC879BE70 /* Pods-froot-loopsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-froot-loopsTests.release.xcconfig"; path = "Target Support Files/Pods-froot-loopsTests/Pods-froot-loopsTests.release.xcconfig"; sourceTree = "<group>"; };
 		491F86C02267ACA100B4B414 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		1BD97F3622694F880060B980 /* View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1BD97F3722694FC40060B980 /* MyEventsCells.swift */,
+			);
+			path = "View Cells";
+			sourceTree = "<group>";
+		};
 		491F86BF2267AC5F00B4B414 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +154,7 @@
 		7C0DCD8B22664B2400DEE090 /* froot-loops */ = {
 			isa = PBXGroup;
 			children = (
+				1BD97F3622694F880060B980 /* View Cells */,
 				491F86BF2267AC5F00B4B414 /* View Controllers */,
 				7C0DCD8C22664B2400DEE090 /* AppDelegate.swift */,
 				7C0DCD8E22664B2400DEE090 /* ViewController.swift */,
@@ -398,6 +409,7 @@
 				491F86C92269236C00B4B414 /* MyEventsViewController.swift in Sources */,
 				491F86C72269235B00B4B414 /* UploadViewController.swift in Sources */,
 				7C0DCD8D22664B2400DEE090 /* AppDelegate.swift in Sources */,
+				1BD97F3822694FC40060B980 /* MyEventsCells.swift in Sources */,
 				491F86C322691C2A00B4B414 /* MessagesViewController.swift in Sources */,
 				491F86C12267ACA100B4B414 /* HomeViewController.swift in Sources */,
 				491F86CB2269238000B4B414 /* SponsorsViewController.swift in Sources */,

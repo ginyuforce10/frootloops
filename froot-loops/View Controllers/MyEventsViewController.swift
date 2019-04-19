@@ -8,15 +8,36 @@
 
 import UIKit
 
-class MyEventsViewController: UIViewController {
+class MyEventsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    let images = ["upcoming event", "pastevent1", "pastevent2"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Events", for: indexPath) as! MyEventsCells
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        cell.EventView.image = UIImage(named: images[indexPath.row])
 
-        // Do any additional setup after loading the view.
+        return cell
     }
     
 
+    @IBOutlet weak var profilePic: UIImageView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        profilePic.layer.cornerRadius = profilePic.frame.size.width / 2
+        profilePic.clipsToBounds = true
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+    
     /*
     // MARK: - Navigation
 
