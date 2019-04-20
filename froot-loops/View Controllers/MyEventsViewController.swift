@@ -13,6 +13,10 @@ class MyEventsViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBOutlet weak var tableView: UITableView!
     
+    
+    
+    
+    
     let images = ["upcoming event", "pastevent1", "pastevent2"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,8 +27,16 @@ class MyEventsViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "Events", for: indexPath) as! MyEventsCells
 
         cell.EventView.image = UIImage(named: images[indexPath.row])
+        
+        cell.backgroundColor = tableView.backgroundColor
+        cell.contentView.backgroundColor = tableView.backgroundColor
 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 160;//Choose your custom row height
     }
     
 
@@ -36,7 +48,11 @@ class MyEventsViewController: UIViewController, UITableViewDelegate, UITableView
         
         tableView.dataSource = self
         tableView.delegate = self
+        
+        super.viewDidLoad()
+        tableView.backgroundColor = .clear
     }
+    
     
     /*
     // MARK: - Navigation
@@ -47,5 +63,7 @@ class MyEventsViewController: UIViewController, UITableViewDelegate, UITableView
         // Pass the selected object to the new view controller.
     }
     */
+    
+
 
 }
