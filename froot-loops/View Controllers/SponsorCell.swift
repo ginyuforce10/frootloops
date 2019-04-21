@@ -10,6 +10,7 @@ import UIKit
 
 class SponsorCell: UITableViewCell {
 
+   
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var raisedLabel: UILabel!
