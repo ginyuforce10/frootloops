@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gv2-5I-Wif">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gv2-5I-Wif">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -202,7 +202,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SponsorCell" rowHeight="279" id="Ya8-a6-jJR" customClass="SponsorCell" customModule="froot_loops" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SponsorViewCell" rowHeight="279" id="Ya8-a6-jJR" customClass="SponsorViewCell" customModule="froot_loops" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="279"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ya8-a6-jJR" id="S49-A4-8Sy">
@@ -250,11 +250,11 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="descriptionLabel" destination="PJP-fs-ewE" id="foF-Px-sUr"/>
-                                            <outlet property="goalLabel" destination="ZSk-zl-pCc" id="vlI-Pe-J0s"/>
-                                            <outlet property="nameLabel" destination="oE1-Dt-GTF" id="WUW-vf-rxu"/>
-                                            <outlet property="posterView" destination="7fW-2x-TnN" id="UcP-bB-tf3"/>
-                                            <outlet property="raisedLabel" destination="Vfo-4s-lgb" id="37S-N5-ouB"/>
+                                            <outlet property="descriptionLabel" destination="PJP-fs-ewE" id="LDN-sg-KOm"/>
+                                            <outlet property="goalLabel" destination="ZSk-zl-pCc" id="MpN-Re-rE6"/>
+                                            <outlet property="nameLabel" destination="oE1-Dt-GTF" id="pwT-hg-K4F"/>
+                                            <outlet property="posterView" destination="7fW-2x-TnN" id="3JB-Bb-Vkr"/>
+                                            <outlet property="raisedLabel" destination="Vfo-4s-lgb" id="Ney-se-5Tf"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -427,5 +427,6 @@
     <resources>
         <image name="icna logo" width="1200" height="1200"/>
         <image name="ios back" width="1040" height="1526"/>
+        <image name="ios back-1" width="1440" height="2560"/>
     </resources>
 </document>

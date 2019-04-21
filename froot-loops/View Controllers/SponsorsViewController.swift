@@ -35,7 +35,7 @@ class SponsorsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SponsorCell") as! SponsorCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SponsorViewCell") as! SponsorViewCell
         
         let projectN = proName[indexPath.row] as! String
         let pRaised = raised[indexPath.row] as! String
