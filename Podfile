@@ -8,6 +8,13 @@ target 'froot-loops' do
   # Pods for froot-loops
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'GoogleSignIn'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'SwiftyJSON'
+  
 
   target 'froot-loopsTests' do
     inherit! :search_paths

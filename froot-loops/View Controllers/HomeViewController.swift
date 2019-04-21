@@ -2,39 +2,67 @@
 //  HomeViewController.swift
 //  froot-loops
 //
-//  Created by Rageeb Mahtab on 4/17/19.
+//  Created by Rageeb Mahtab on 4/18/19.
 //  Copyright © 2019 Yasin Ehsan. All rights reserved.
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
 
 class HomeViewController: UIViewController {
-
-    @IBOutlet var homeView: UIView!
-    @IBOutlet weak var tableMapSegmentControl: UISegmentedControl!
+    @IBOutlet weak var tableView: UIView!
+    @IBOutlet weak var mapView: UIView!
+    @IBOutlet weak var scSegment: UISegmentedControl!
+    @IBOutlet weak var emailOu: UILabel!
     
+    // Constants
+    let userDefault = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        guard let email = Auth.auth().currentUser?.email else { return }
+        emailOu.text = email
         // Do any additional setup after loading the view.
     }
-    
-    
-    @IBAction func onSwitchSegment(_ sender: Any) {
-        let getIndex = tableMapSegmentControl.selectedSegmentIndex
-        
-        switch getIndex {
+
+    @IBAction func onSegmentSwitched(_ sender: Any) {
+        let getIndex = scSegment.selectedSegmentIndex
+        switch (getIndex) {
         case 0:
-            self.homeView.backgroundColor = UIColor.red
+            UIView.animate(withDuration: 0.5, animations: {
+                self.tableView.alpha = 1
+                self.mapView.alpha = 0
+            })
         case 1:
-            self.homeView.backgroundColor = UIColor.blue
+            UIView.animate(withDuration: 0.5, animations: {
+                self.tableView.alpha = 0
+                self.mapView.alpha = 1
+            })
         default:
-            self.homeView.backgroundColor = UIColor.red
+            UIView.animate(withDuration: 0.5, animations: {
+            self.tableView.alpha = 1
+            self.mapView.alpha = 0
+            })
         }
     }
     
-
+    @IBAction func signOutPressed(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            try GIDSignIn.sharedInstance()?.signOut()
+//            self.userDefault.set(false, forKey: "usersignedin")
+            userDefault.removeObject(forKey: "usersignedin")
+            userDefault.synchronize()
+            self.dismiss(animated: true, completion: nil)
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
